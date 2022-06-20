@@ -14,16 +14,17 @@ function createEmployeeRecord(recordArray) {
 
 
 const allWagesFor = () => {
-    const eligibleDates = this.timeInEvents.map((f) => {
+    const eligibleDates = this.timeInEvents.map((e) => {
         return f.date
     })
 
-    const payable = eligibleDates.reduce((memo, k) =>
+    const payable = eligibleDates.reduce((memo, d) =>
 
-        return memo + wagesEarnedOnDate.call(this, k)
+        return memo + wagesEarnedOnDate.call(this, d)
 
         .bind(this), 0)
 }
+
 
 return payable
 
